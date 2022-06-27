@@ -1,26 +1,3 @@
-# Welcome to The Stripes NFT 💎
-
-![](https://github.com/The-Stripes-NFT/nft-minting-app/blob/main/logo-blob.png)
-
-All the code in these repos was created and explained by HashLips on the main YouTube channel.
-
-To find out more please visit:
-
-[📺 YouTube](https://www.youtube.com/AliSolanki)
-
-[💬 Telegram](https://t.me/studentsamaj)
-
-[🐦 Twitter](https://twitter.com/thestripesnft)
-
-[ℹ️ Website](https://thestripesnft.com/)
-
-# The Stripes NFT minting dapp 🔥
-
-This repo provides a nice and easy way for linking an existing NFT smart contract to this minting dapp. There are two ways of using this repo, you can go the simple route or the more complex one.
-
-The simple route is so simple, all you need to do is download the build folder on the release page and change the configuration to fit your needs. (Follow the video for a walk through).
-
-The more complex route allows you to add additional functionality if you are comfortable with coding in react.js. (Follow the below instructions for a walk through).
 
 ## Installation 🛠️
 
@@ -48,23 +25,24 @@ Note: this dapp is designed to work with the intended NFT smart contract, that o
 
 ```json
 {
-  "CONTRACT_ADDRESS": "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
-  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "CONTRACT_ADDRESS": "0x1B50DF9d96B4B662ffc3ffD7826B2Ef70e38698a",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/token/0x1B50DF9d96B4B662ffc3ffD7826B2Ef70e38698a",
   "NETWORK": {
-    "NAME": "Polygon",
+    "NAME": "Polygon Testnet",
     "SYMBOL": "Matic",
-    "ID": 137
+    "ID": 80001
   },
-  "NFT_NAME": "The Stripes NFT",
-  "SYMBOL": "TSNFT",
-  "MAX_SUPPLY": 992,
-  "WEI_COST": 75000000000000000,
-  "DISPLAY_COST": 0.075,
+  "NFT_NAME": "FACE NFT v5",
+  "SYMBOL": "FACE v5",
+  "MAX_SUPPLY": 300,
+  "WEI_COST": 500000000000000,
+  "DISPLAY_COST": 0.005,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/the-stripes-nft",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/the-face-nft-v5",
   "SHOW_BACKGROUND": true
 }
+
 ```
 
 Make sure you copy the contract ABI from remix and paste it in the `public/config/abi.json` file.
